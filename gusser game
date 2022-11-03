@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>GGA</title>
+        
+        <link icon="stylesheet" href="">
+        <link rel="Stylesheet" href="amma.css">
+    </head>
+        <body>
+            
+            <img id="img1" src="https://tse1.mm.bing.net/th?id=OIP.ZTa_nUnTYImxWVIzxTF6xQHaG9&pid=Api&P=0" alt="Not Found">
+            <h1>Guesser Game!!!</h1>
+            <img class="img2" src="https://image.similarpng.com/very-thumbnail/2020/07/Thinking-face-emoji-vector-PNG.png" alt="Not Found">
+            <div id="div1">
+                      <nav>
+                        <a href="#">Select  Numbers  From 1 to 100</a>
+                      </nav>
+            </div>
+            <center>
+                <div id="div2">
+                    <form action"" onsubmit="lastclass()">
+                        <fieldset>
+                            <legend align="center">Let's Start</legend>
+                            <label for="user">guesser<sup style="color: rgb(0, 255, 200);">*</sup>:</label>
+                            <input type="password" name="" id="pass0" required><br><br>
+                            <label for="pass">Player1<sup style="color: rgb(8, 0, 255);">*</sup>:</label>
+                            <input type="text" name="" id="pass1" required><br><br>
+                            <label for="pass">Player2<sup style="color: rgb(0, 255, 85);">*</sup>:</label>
+                            <input type="text" name="" id="pass2" required><br><br>
+                            <label for="pass">Player3<sup style="color: red;">*</sup>:</label>
+                            <input type="text" name="" id="pass3" required><br><br>
+                            <button onclick="submit">submit</button>
+                        </fieldset>
+                        <script>
+                        
+                    </script>
+
+                    </form>
+                </div>
+            </center> 
+            <script>
+            function lastclass(){
+
+
+                var guesser = document.getElementById("pass0").value;
+                
+                var player1 = document.getElementById("pass1").value;
+                
+                var player2 = document.getElementById("pass2").value;
+                
+                var player3 = document.getElementById("pass3").value;
+                
+                if(player1 == guesser){
+                    document.write("Player 1 has won the game")
+                }
+        
+               else if(player2 == guesser){
+                    document.write("Player 2 has won the game")
+                }
+        
+               else if(player3 == guesser){
+                    document.write("Player 3 has won the game")
+                }
+                else{
+                    document.write("Game Lost, Try Again")
+                }
+        
+                console.log(typeof(guesser))
+        
+            }
+        </script>
+    </body>
+</html>
